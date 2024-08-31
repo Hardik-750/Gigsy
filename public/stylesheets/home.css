@@ -119,7 +119,7 @@ body {
     animation-duration: 1s;
 }
 
-@keyframes blackbgfirst {
+@keyframes blackbgfidrst {
     0%{
         opacity: 0;
         margin-top: 100px;
@@ -174,13 +174,11 @@ body {
 @keyframes paragraphheading {
     from{
         opacity: 0;
-        position: relative;
-        left: 50px;
+        transform: translateY(30px);
     }
     to{
         opacity: 1;
-        position: relative;
-        left: 0px;
+        transform: translateY(0px);
     }
 }
 
@@ -419,4 +417,178 @@ body {
     align-items: center;
     font-weight: 500;
     font-size: 18px;
+}
+
+.our-ratings{
+    width: 100%;
+    height: 100vh;
+}
+
+.our-ratings h1{
+    width: 25%;
+    height: 10%;
+    font-family: 'Cormorant Unicase';
+    font-style: normal;
+    color: rgb(255, 50, 255);
+    font-size: 40px;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+}
+
+.our-ratings h2{
+    width: 22%;
+    height: 10%;
+    font-family: 'Cambay';
+    font-style: normal;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.our-ratings-whole-scrolled-container{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-ratings-first-scrolled-container{
+    width: 200%;
+    height: 45%;
+    overflow-x: hidden;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    animation: scrollAnimation 20s linear infinite;
+}
+
+.our-ratings-second-scrolled-container{
+    width: 200%;
+    height: 45%;
+    overflow-x: hidden;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    animation: scrollAnimationn 20s linear infinite;
+}
+
+.our-ratings-scrolling-animation-main-container{
+    width: 350px;
+    height: 200px;
+    background: #ECEDC5;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.our-ratings-scrolling-animation-main-container:hover{
+    transform: translateY(-10px);
+}
+
+.our-ratings-scrolling-animation-main-container-ratings-heading{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    align-items: center;
+    font-family: 'Cambay';
+    font-weight: 700;
+    font-style: normal;
+    padding-left: 20px;
+}
+
+.our-ratings-scrolling-animation-main-container-bottom-container{
+    width: 100%;
+    height: 45%;
+    display: flex;
+}
+
+.our-ratings-scrolling-animation-main-container-image-container{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-ratings-scrolling-animation-main-container-image-container img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.our-ratings-scrolling-animation-main-container-bottom-container-name-container{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.our-ratings-scrolling-animation-main-container-bottom-container-main-name-container{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    font-family: 'Cambay';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.our-ratings-scrolling-animation-main-container-bottom-container-main-profession-container{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    font-family: 'Cambay';
+    font-style: normal;
+    color: rgb(54, 54, 54);
+}
+
+.rating-conainer-main{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.ratings-container-img-container{
+    width: 100%;
+    height: 30%;
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ratings-container-img-container img{
+    width: 20%;
+    height: 100%;
+}
+
+@keyframes scrollAnimatieon {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.footer{
+    width: 100%;
+    height: 50vh;
+    background: #0B0A23;
 }
