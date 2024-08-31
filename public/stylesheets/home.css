@@ -578,7 +578,7 @@ body {
     height: 100%;
 }
 
-@keyframes scrollAnimatieon {
+@keyframes scrollAnimation {
     0% {
         transform: translateX(0);
     }
