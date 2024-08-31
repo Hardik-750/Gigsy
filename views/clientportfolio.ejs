@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= user.firstname %>'s Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="stylesheets/clientportfolio.css" />
+  </head>
+  <body>
+    <div class="left-container">
+      <h1>Gigsy</h1>
+      <div class="profile-container">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmoDdyUGzcWTltc_HjeCVi7-2yGIOjHu3HsA&s"
+          alt=""
+        />
+        <h3>Ankit Ahirwar</h3>
+        <p>Client</p>
+      </div>
+      <div class="dashboard-menu-container">
+        <div class="dash-icons home-icon-container">
+          <div class="dashboard-menu-icons">
+            <i class="fa-solid fa-house" style="color: #ffffff"></i>
+          </div>
+          <div class="dashboard-menu-headings">Home</div>
+        </div>
+        <div class="dash-icons dashboar-icon-container">
+          <div class="dashboard-menu-icons">
+            <i class="fa-solid fa-chart-column" style="color: #ffffff"></i>
+          </div>
+          <div class="dashboard-menu-headings">Dashboard</div>
+        </div>
+        <div class="dash-icons search-icon-container">
+          <div class="dashboard-menu-icons">
+            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i>
+          </div>
+          <div class="dashboard-menu-headings">Search</div>
+        </div>
+        <div class="dash-icons askai-icon-container">
+          <div class="dashboard-menu-icons">
+            <i class="fa-solid fa-brain" style="color: #ffffff"></i>
+          </div>
+          <div class="dashboard-menu-headings">Ask AI?</div>
+        </div>
+        <div class="dash-icons makeproject-icon-container">
+          <div class="dashboard-menu-icons">
+            <i class="fa-solid fa-diagram-project" style="color: #ffffff"></i>
+          </div>
+          <div class="dashboard-menu-headings">Make Project</div>
+        </div>
+        <button onclick="window.location.href = '/logout'">Logout</button>
+      </div>
+    </div>
+
+    <div class="right-container-ask-to-ai">
+      <h1>
+        Wellcome,
+        <span
+          style="
+            background: linear-gradient(
+              45deg,
+              rgb(46, 46, 255),
+              rgb(255, 33, 255)
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+            padding-left: 10px;
+          "
+          ><%= user.firstname %></span
+        >
+      </h1>
+      <div class="right-container-ask-to-ai-meet-to-out-ai-container">
+        <p>Meet Our AI</p>
+        <img src="images/Slide 4_3 - 1.png" alt="" />
+      </div>
+      <div class="right-container-ask-to-ai-bottom-container">
+        <div class="message-container">
+          <p class="first-fixed-message">Welcome to Gigsy! 🎉</p>
+          <div id="second-fxed-container">
+            <p id="second-fixed-container"></p>
+          </div>
+          <div id="how-its-words-container">
+            <p id="how-works-container">
+
+            </p>
+          </div>
+        </div>
+        <div class="questions-container">
+          <div class="questions-first-row-container">
+            <div class="first-question-container">
+              <i
+                class="fa-regular fa-comment-dots"
+                style="color: #ffffff; font-size: 20px"
+              ></i>
+              <p>Chat Now</p>
+            </div>
+            <button style="width: 25%">How do I post a project?</button>
+            <button onclick="howitworks()" style="width: 15%; border: 0.3px solid rgb(255, 33, 44)">
+              How it works?
+            </button>
+            <button style="width: 35%; border: 0.3px solid blueviolet">
+              How do I ensure my password is secure?
+            </button>
+          </div>
+          <div class="questions-second-row-container">
+            <button style="width: 18%; border: 0.3px solid blue">
+              What is Gigsy?
+            </button>
+            <button style="width: 28%; border: 0.3px solid yellow">
+              List some website developer!
+            </button>
+            <button style="width: 45%; border: 0.3px solid orangered">
+              Can I communicate directly with freelancers/clients?
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const text = "I’m your AI guide, here to help you connect, collaborate, andsucceed. Whether you're a freelancer or a client, let's createsomething amazing together. Need assistance? I'm always here tohelp. Let's get started!";
+    let index = 0;
+
+    function typeWriter() {
+      if (index < text.length) {
+        document.getElementById('second-fixed-container').innerHTML += text.charAt(index);
+        index++;
+        const speed = Math.random() * (20, 10) + 5;
+        setTimeout(typeWriter, speed);
+      }
+    };
+
+    typeWriter();
+
+    function howitworks() {
+      const howitsworktext = "Clients post projects, freelancers submit proposals, and once a match is made, they collaborate through Gigsy’s tools. Secure payments are processed upon project completion."
+      const container = document.getElementById('how-works-container');
+
+
+      for (let i = 0; i < howitsworktext.length; i++){
+        const speed = Math.random() * (10, 5) + 5;
+        setTimeout(() => {
+          container.innerHTML += howitsworktext.charAt(i);
+        }, i * speed);
+      };
+    };
+  </script>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gigsy: Sign up</title>
+    <link rel="stylesheet" href="stylesheets/signin.css">
+</head>
+<body>
+    <div class="left-container"></div>
+    <div class="invisible-container">
+        <div class="main-container">
+            <div class="left-main-container">
+                <h2>Sign Up</h2>
+                <div class="already-have-an-account-container">
+                    <p>Already have an accound?</p>
+                    <a href="/login">Log in</a>
+                </div>
+                <form action="/create" method="post">
+                    <div class="fullname-container">
+                        <div class="first-name-container">
+                            <h4>First Name</h4>
+                            <input type="text" placeholder="John" name="firstname">
+                        </div>
+                        <div class="last-name-container">
+                            <h4>Last Name</h4>
+                            <input type="text" placeholder="Doe" name="lastname">
+                        </div>
+                    </div>
+                    <div class="email-container">
+                        <h4>E-mail</h4>
+                        <input type="email" placeholder="example@gmail.com" name="email">
+                    </div>
+                    <div class="password-container">
+                        <h4>Password</h4>
+                        <input type="password" placeholder="******" name="password">
+                    </div>
+                    <div class="is-client-container">
+                        <label for="Hireing" style="font-weight: 700; color: #20422B; margin-left: 205px; text-decoration: underline;">I'm Hireing</label>
+                        <input type="checkbox" name="isclient" style="margin-left: 10px;">
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+            <div class="right-main-container">
+                <h1>Gigsy</h1>
+                <p>Where Talent Meets Opportunity</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

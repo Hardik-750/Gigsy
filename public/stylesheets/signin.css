@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Cambay:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: rgb(245, 245, 245);
+}
+
+.left-container {
+  width: 35%;
+  height: 100%;
+  background: #0B0A23;
+}
+
+.invisible-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main-container {
+  width: 700px;
+  height: 500px;
+  display: flex;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.left-main-container {
+  width: 60%;
+  height: 100%;
+  background: white;
+  font-family: 'cambay';
+  font-style: normal;
+  border-radius: 20px 0 0 20px;
+}
+
+.left-main-container h2{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    font-size: 27px;
+    align-items: center;
+    padding-left: 50px;
+    padding-top: 30px;
+    margin-top: 10px;
+}
+
+.already-have-an-account-container{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.already-have-an-account-container p{
+    color: rgb(110, 110, 110);
+    padding-left: 50px;
+}
+
+.already-have-an-account-container a{
+    color: #0B0A23;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.left-main-container form{
+    width: 80%;
+    height: 60%;
+    margin-left: 50px;
+    margin-top: 15px;
+    /* border: 1px solid black; */
+}
+
+.fullname-container{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    /* border: 1px solid black; */
+}
+
+.first-name-container{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+.first-name-container input[type=text]{
+    width: 80%;
+    height: 45%;
+    outline: none;
+    margin-top: 15px;
+    padding-left: 15px;
+    color: rgb(32, 32, 32);
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    background: whitesmoke;
+}
+
+.last-name-container{
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+    /* border: 1px solid black; */
+}
+
+.last-name-container input[type=text]{
+    width: 80%;
+    height: 45%;
+    outline: none;
+    margin-top: 15px;
+    padding-left: 15px;
+    color: rgb(32, 32, 32);
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    background: whitesmoke;
+}
+
+.email-container{
+    width: 100%;
+    height: 30%;
+    margin-top: 20px;
+    /* border: 1px solid black;s */
+}
+
+.email-container input[type=email]{
+    width: 90%;
+    height: 45%;
+    outline: none;
+    margin-top: 10px;
+    padding-left: 15px;
+    color: rgb(32, 32, 32);
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    background: whitesmoke;
+}
+
+.password-container{
+    width: 100%;
+    height: 30%;
+    margin-top: 10px;
+    /* border: 1px solid black;s */
+}
+
+.password-container input[type=password]{
+    width: 90%;
+    height: 45%;
+    outline: none;
+    margin-top: 10px;
+    padding-left: 15px;
+    color: rgb(32, 32, 32);
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    background: whitesmoke;
+}
+
+.is-client-container{
+    width: 100%;
+    height: 10%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    right: 5%;
+    /* border: 1px solid black; */
+}
+
+.left-main-container form button{
+    width: 70%;
+    height: 12%;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 30px;
+    background: #0B0A23;
+    color: white;
+    font-weight: 700;
+    border: none;
+}
+
+.right-main-container {
+  width: 40%;
+  height: 100%;
+  background: #0B0A23;
+  border-radius: 20px 0 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Cormorant Unicase", serif;
+  font-style: normal;
+  color: white;
+}
+
+.right-main-container h1{
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.right-main-container p{
+    font-weight: 500;
+    letter-spacing: 2px;
+    width: 80%;
+    padding-top: 15px;
+    text-align: center;
+}

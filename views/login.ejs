@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gigsy: Login</title>
+    <link rel="stylesheet" href="stylesheets/login.css">
+</head>
+<body>
+    <div class="left-container"></div>
+    <div class="invisible-container">
+        <div class="main-container">
+            <div class="main-left-continer">
+                <div class="main-left-main-container">
+                    <h1>Gigsy</h1>
+                <p>Where Talent Meets Opportunity</p>
+                </div>
+            </div>
+            <div class="main-right-continer">
+                <div class="login-heading-container">
+                    <h1>Log in</h1>
+                </div>
+                <div class="donthavanaccount-container">
+                    <p>Don't have an account?</p>
+                    <a href="/signin" style="padding-left: 0.5rem; color: #20442B; font-weight: 700;">Create One</a>
+                </div>
+                <form action="/login" method="post">
+                    <h1>E-mail</h1>
+                    <input type="email" placeholder="example@gmail.com" name="email">
+                    <h1 style="margin-top: 20px;">Password</h1>
+                    <input type="password" placeholder="*******" name="password">
+                    <div class="forgot-container">
+                        <a href="/forgotpassword" style="margin-left: auto; font-weight: 700; color: #20442B;">Forgot Password</a>
+                    </div>
+                    <input style="background: #0B0A23;padding-left: 0px; color: white; cursor: pointer; border-radius: 15px;" type="submit" value="Log in">
+                </form>
+                <div class="orlinecontainer">
+                    <hr style="width: 49%; margin-left: 7rem;">
+                </div>
+                <div class="another-getway-container">
+                    <div class="google-gateway-container">
+                        <div class="google-gateway-container-image">
+                            <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt="">
+                        </div>
+                        <p>Continue with Google</p>
+                    </div>
+                    <div class="google-gateway-container">
+                        <div class="google-gateway-container-image">
+                            <img style="width: 60%; height: 80%;" src="https://cdn.freebiesupply.com/images/large/2x/apple-logo-transparent.png" alt="">
+                        </div>
+                        <p>Continue with Apple</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
